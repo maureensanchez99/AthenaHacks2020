@@ -6,6 +6,29 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
+/*Bar across the page*/
+.profile-bar {
+  padding: 40px;
+  background: #1ebab2;
+  color: black;
+}
+
+
+/*Profile image*/
+.image {
+  height: 200;
+  width: 200;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/*Profile name*/
+div.name {
+  text-index: 40%;
+}
+
+
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
   background-color: #555;
@@ -75,12 +98,20 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+
 </style>
 </head>
 <body>
 
-<h2>User Profile</h2>
-<p>Text.</p>
+<div class="profile-bar">
+
+
+<h1>User Profile</h1>
+
+<p> Name </p>
+</div>
+
 
 <button class="open-button" onclick="openForm()">Chat</button>
 
@@ -108,4 +139,3 @@ function closeForm() {
 
 </body>
 </html>
-
